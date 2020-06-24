@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+    <meta name="author" content="Coderthemes">
+
+    <link rel="shortcut icon" href="/assets/images/favicon.ico">
+
+    <title>TLFleet</title>
+
+
+    <!-- App css -->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/mystyle.css" rel="stylesheet" type="text/css" />
+
+    <script src="/assets/js/modernizr.min.js"></script>
+    <style>
+        pointer {
+            cursor: pointer
+        }
+    </style>
+
+</head>
+
+
+<body class="fixed-left">
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        <!-- Top Bar Start -->
+        <div class="topbar">
+
+            <!-- LOGO -->
+            <div class="topbar-left">
+                <a href="index.html" class="logo"><span>TL<span>Fleet</span></span><i class="mdi mdi-layers"></i></a>
+            </div>
+
+            <!-- Button mobile view to collapse sidebar menu -->
+            <div class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+
+                    <!-- Page title -->
+                    <ul class="nav navbar-nav list-inline navbar-left">
+                        <li class="list-inline-item">
+                            <button class="button-menu-mobile open-left">
+                                <i class="mdi mdi-menu"></i>
+                            </button>
+                        </li>
+                        <li class="list-inline-item">
+                            <h4 class="page-title">Vehicle List</h4>
+                        </li>
+                    </ul>
+
+                    <nav class="navbar-custom">
+
+                        <ul class="list-unstyled topbar-right-menu float-right mb-0">
+
+                            <li>
+                                <!-- Notification -->
+                                <div class="notification-box">
+                                    <ul class="list-inline mb-0">
+                                        <li>
+                                            <a href="javascript:void(0);" class="right-bar-toggle">
+                                                <i class="mdi mdi-bell-outline noti-icon"></i>
+                                            </a>
+                                            <div class="noti-dot">
+                                                <span class="dot"></span>
+                                                <span class="pulse"></span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- End Notification bar -->
+                            </li>
+
+                            <li class="hide-phone">
+                                <form class="app-search">
+                                    <input type="text" placeholder="Search..." class="form-control">
+                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                </form>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div><!-- end container -->
+            </div><!-- end navbar -->
+        </div>
+        <!-- Top Bar End -->
+
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="left side-menu">
+            <div class="sidebar-inner slimscrollleft">
+
+                <!-- User -->
+                <div class="user-box">
+                    <div class="user-img">
+                        <img src="/assets/images/users/avatar-1.jpg" alt="user-img" title="TL Fleet"
+                            class="rounded-circle img-thumbnail img-responsive">
+                        <div class="user-status offline"><i class="mdi mdi-adjust"></i></div>
+                    </div>
+                    <h5><a href="#">TL Fleet</a> </h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="mdi mdi-settings"></i>
+                            </a>
+                        </li>
+
+                        <li class="list-inline-item">
+                            <a href="#" class="text-custom">
+                                <i class="mdi mdi-power"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End User -->
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <ul>
+                        <li class="text-muted menu-title">Navigation</li>
+
+                        <li>
+                            <a href="dashboard.html" class="waves-effect"><i class="mdi mdi-view-dashboard"></i> <span>
+                                    Dashboard </span> </a>
+                        </li>
+
+
+
+                        <li class="has_sub">
+                            <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-car"></i>
+                                <span>Vehicles</span> <span class="menu-arrow"></span></a>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Vehicle List</a></li>
+                                <li><a href="#">Vehicle Assignment</a></li>
+                                <li><a href="#">Watched Vehicles</a></li>
+                                <li><a href="#">Meter History</a></li>
+                                <li><a href="#">Expense history</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has_sub">
+                            <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-check"></i><span>
+                                    Inspections </span><span class="menu-arrow"></span></a> </a>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Inspection History</a></li>
+                                <li><a href="#">Item Failures</a></li>
+                                <li><a href="#">Schedules</a></li>
+                                <li><a href="#">Forms</a></li>
+                            </ul>
+                        </li>
+
+
+
+                        <li class="has_sub">
+                            <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-warning"></i><span>
+                                    Issues </span> <span class="menu-arrow"></span></a>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Issue list</a></li>
+                                <li><a href="#">Faults</a></li>
+                                <li><a href="#">Recalls</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="has_sub">
+                            <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-alarm"></i><span>
+                                    Reminders </span> <span class="menu-arrow"></span></a>
+                            <ul class="list-unstyled">
+                                <li><a href="page-starter.html">Service Reminder</a></li>
+                                <li><a href="page-login.html">Vehicle Renewal</a></li>
+                                <li><a href="page-register.html">Contact Renewal</a></li>
+
+                            </ul>
+                        </li>
+
+
+
+
+                        <li class="has_sub">
+                            <a href="javascript:void(0);" class="waves-effect"><i class="fa fa-wrench"></i> <span>
+                                    Services </span> <span class="menu-arrow"></span></a>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Service History</a></li>
+                                <li><a href="#">Work Orders</a></li>
+                                <li><a href="#">Service Tasks</a></li>
+                                <li><a href="#">Shop Directory</a></li>
+                                <li><a href="#">Integrations</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has_sub">
+                            <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-gas-station"></i><span>
+                                    Fuel </span> <span class="menu-arrow"></span></a>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Fuel History</a></li>
+                                <li><a href="#">Fuel Integrations</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has_sub">
+                            <a href="javascript:void(0);" class="waves-effect"><i
+                                    class="mdi mdi-nature-people"></i><span>Contacts&User </span> <span
+                                    class="menu-arrow"></span></a>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Contact list</a></li>
+                                <li><a href="#">User Mangement</a></li>
+                                <li><a href="#">Vendor List</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="has_sub">
+                            <a href="javascript:void(0);" class="waves-effect"><i
+                                    class="mdi mdi-box-outline"></i><span>Parts&inventories </span> <span
+                                    class="menu-arrow"></span></a>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Contact list</a></li>
+                                <li><a href="#">User Mangement</a></li>
+                                <li><a href="#">Vendor List</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- Sidebar -->
+                <div class="clearfix"></div>
+
+            </div>
+
+        </div>
+        <!-- Left Sidebar End -->
+
+
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="content-page">
+            <!-- Start content -->
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="nav nav-tabs">
+                                <li class="active nav-item">
+                                    <a data-target="#all" data-toggle="tab" aria-expanded="false"
+                                        class="nav-link  active show">
+                                        All
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a data-target="#assigned" data-toggle="tab" aria-expanded="true"
+                                        class="nav-link show">
+                                        Assigned
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a data-target="#unassigned" data-toggle="tab" aria-expanded="false"
+                                        class="nav-link show">
+                                        Unassigned
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a data-target="#archived" data-toggle="tab" aria-expanded="false"
+                                        class="nav-link show">
+                                        Archived
+                                    </a>
+                                </li>
+
+                                <button type="button"
+                                    class="btn btn-success btn-right btn-bordred waves-effect w-md waves-light m-b-5 ml-auto">
+                                    <i class="fa fa-plus"></i>
+                                    Add Vehicle</button>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--row -->
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <div class="tab-content">
+                                <div class="card-box tab-pane active" id="all">
+                                    <table class="table table-hover ">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>VIN/SN</th>
+                                                <th>Type</th>
+                                                <th>Make</th>
+                                                <th>Model</th>
+                                                <th>License Plate</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <% vehicles.forEach(vehicle => { %>
+                                                <tr class="pointer">
+                                                    <td><%= vehicle.vehicleName %></td>
+                                                    <td><%= vehicle.vin %></td>
+                                                    <td><%= vehicle.type %></td>
+                                                    <td><%= vehicle.make %></td>
+                                                    <td><%= vehicle.model %></td>
+                                                    <td><%= vehicle.licensePlate %></td>
+                                                    <td>
+                                                        <a class="btn btn-block btn-dark" href="/vehicle/one/<%= vehicle._id %>">
+                                                            View
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            <% }) %>
+
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                                <div class="card-box tab-pane " id="assigned">
+                                    <table class="table table-hover ">
+                                        <thead>
+                                            <tr>
+
+                                                <th>Name</th>
+                                                <th>Status</th>
+                                                <th>Type</th>
+                                                <th>Region</th>
+                                                <th>Current Meter</th>
+                                                <th>Operator</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr data-href="vehicle.html">
+                                                <td>B200 [2019 Toyota Hiace]</td>
+                                                <td>Active</td>
+                                                <td>Bus</td>
+                                                <td>West</td>
+                                                <td>2,432 mi</td>
+                                                <td>John Smith</td>
+                                            </tr>
+                                            <tr data-href="vehicle.html">
+                                                <td>B230 [2008 Toyota Hiace]</td>
+                                                <td>Active</td>
+                                                <td>Bus</td>
+                                                <td>West</td>
+                                                <td>22,432 mi</td>
+                                                <td>John Doe</td>
+                                            </tr>
+                                            <tr data-href="vehicle.html">
+                                                <td>B323 [2015 Toyota Hiace]</td>
+                                                <td>Inactive</td>
+                                                <td>Bus</td>
+                                                <td>West</td>
+                                                <td>12,474 mi</td>
+                                                <td>Jane Doe</td>
+                                            </tr>
+                                            <tr data-href="vehicle.html">
+                                                <td>B230 [2018 Ford]</td>
+                                                <td>Inshop</td>
+                                                <td>Bus</td>
+                                                <td>West</td>
+                                                <td>35,432 mi</td>
+                                                <td>Adam Smith</td>
+                                            </tr>
+                                            <tr data-href="vehicle.html">
+                                                <td>B230 [2008 Toyota Hiace]</td>
+                                                <td>Active</td>
+                                                <td>Bus</td>
+                                                <td>West</td>
+                                                <td>22,432 mi</td>
+                                                <td>John Doe</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                                <div class="card-box tab-pane " id="unassigned">
+                                    <table class="table table-hover ">
+                                        <thead>
+                                            <tr>
+
+                                                <th>Name</th>
+                                                <th>Status</th>
+                                                <th>Type</th>
+                                                <th>Region</th>
+                                                <th>Current Meter</th>
+                                                <th>Operator</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr data-href="vehicle.html">
+                                                <td>B5630 [2008 Toyota Hiace]</td>
+                                                <td>Active</td>
+                                                <td>Bus</td>
+                                                <td>East</td>
+                                                <td>67,432 mi</td>
+                                                <td>Unassigned</td>
+                                            </tr>
+                                            <tr data-href="vehicle.html">
+                                                <td>B600 [2008 Toyota Hiace]</td>
+                                                <td>Out of service</td>
+                                                <td>Bus</td>
+                                                <td>West</td>
+                                                <td>22,432 mi</td>
+                                                <td>Unassigned</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                                <div class="card-box tab-pane " id="archived">
+                                    <table class="table table-hover ">
+                                        <thead>
+                                            <tr>
+
+                                                <th>Name</th>
+                                                <th>Status</th>
+                                                <th>Type</th>
+                                                <th>Region</th>
+                                                <th>Current Meter</th>
+                                                <th>Operator</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr data-href="vehicle.html">
+                                                <td>B230 [2018 Ford]</td>
+                                                <td>Inshop</td>
+                                                <td>Bus</td>
+                                                <td>West</td>
+                                                <td>35,432 mi</td>
+                                                <td>Archived</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--row -->
+
+
+                </div> <!-- container -->
+
+            </div> <!-- content -->
+
+            <footer class="footer text-right">
+                2016 - 2019 © TLFleet.com
+            </footer>
+
+        </div>
+
+
+        <!-- ============================================================== -->
+        <!-- End Right content here -->
+        <!-- ============================================================== -->
+
+
+        <!-- Right Sidebar -->
+        <div class="side-bar right-bar">
+            <a href="javascript:void(0);" class="right-bar-toggle">
+                <i class="mdi mdi-close-circle-outline"></i>
+            </a>
+            <h4 class="">Notifications</h4>
+            <div class="notification-list nicescroll">
+                <ul class="list-group list-no-border user-list">
+                    <li class="list-group-item">
+                        <a href="#" class="user-list-item">
+                            <div class="avatar">
+                                <img src="/assets/images/users/avatar-2.jpg" alt="">
+                            </div>
+                            <div class="user-desc">
+                                <span class="name">Michael Zenaty</span>
+                                <span class="desc">There are new settings available</span>
+                                <span class="time">2 hours ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" class="user-list-item">
+                            <div class="icon bg-info">
+                                <i class="mdi mdi-account"></i>
+                            </div>
+                            <div class="user-desc">
+                                <span class="name">New Signup</span>
+                                <span class="desc">There are new settings available</span>
+                                <span class="time">5 hours ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" class="user-list-item">
+                            <div class="icon bg-pink">
+                                <i class="mdi mdi-comment"></i>
+                            </div>
+                            <div class="user-desc">
+                                <span class="name">New Message received</span>
+                                <span class="desc">There are new settings available</span>
+                                <span class="time">1 day ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-group-item active">
+                        <a href="#" class="user-list-item">
+                            <div class="avatar">
+                                <img src="/assets/images/users/avatar-3.jpg" alt="">
+                            </div>
+                            <div class="user-desc">
+                                <span class="name">James Anderson</span>
+                                <span class="desc">There are new settings available</span>
+                                <span class="time">2 days ago</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="list-group-item active">
+                        <a href="#" class="user-list-item">
+                            <div class="icon bg-warning">
+                                <i class="mdi mdi-settings"></i>
+                            </div>
+                            <div class="user-desc">
+                                <span class="name">Settings</span>
+                                <span class="desc">There are new settings available</span>
+                                <span class="time">1 day ago</span>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- /Right-bar -->
+
+    </div>
+    <!-- END wrapper -->
+
+
+    <!-- jQuery  -->
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/detect.js"></script>
+    <script src="/assets/js/fastclick.js"></script>
+    <script src="/assets/js/jquery.blockUI.js"></script>
+    <script src="/assets/js/waves.js"></script>
+    <script src="/assets/js/jquery.nicescroll.js"></script>
+    <script src="/assets/js/jquery.slimscroll.js"></script>
+    <script src="/assets/js/jquery.scrollTo.min.js"></script>
+    <script src="/assets/js/myscript.js"></script>
+
+    <!-- App js -->
+    <script src="/assets/js/jquery.core.js"></script>
+    <script src="/assets/js/jquery.app.js"></script>
+
+</body>
+
+</html>
